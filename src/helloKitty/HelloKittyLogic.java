@@ -67,6 +67,7 @@ public class HelloKittyLogic
 		{
 			HKP.activateNumericButtons();
 			HKP.inActivateOperatorButtons();
+			HKP.deActivateLikaMedButton();
 		}
 	}
 	public void phase2(boolean redo)
@@ -76,13 +77,13 @@ public class HelloKittyLogic
 			HKP.setOutPutText(outPut);
 			HKP.activateNumericButtons();
 			HKP.inActivateOperatorButtons();
-			HKP.activateLikaMedButton();
 			phase = 3;
 		}
 		else if(redo == true)
 		{
 			HKP.inActivateNumericButtons();
 			HKP.activateOperatorButtons();
+			HKP.deActivateLikaMedButton();
 		}
 	}
 	public void phase3(boolean redo)
@@ -99,6 +100,7 @@ public class HelloKittyLogic
 		{
 			HKP.activateNumericButtons();
 			HKP.inActivateOperatorButtons();
+			HKP.deActivateLikaMedButton();
 		}
 	}
 	public void phase4()
@@ -137,8 +139,8 @@ public class HelloKittyLogic
 			outPut = "";
 			HKP.activateNumericButtons();
 			HKP.inActivateOperatorButtons();
-			
 		}
 		HKP.deActivateDeleteButton();
+		HKP.deActivateLikaMedButton();
 	}
 }

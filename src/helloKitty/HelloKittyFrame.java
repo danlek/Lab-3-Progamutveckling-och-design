@@ -11,7 +11,7 @@ public class HelloKittyFrame extends JFrame
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
 		this.setVisible(true);
 		HKP = new HelloKittyPanel();
-		this.add(HKP);
+		this.add(HKP);	
 	}
 	public static void main(String[] args) 
 	{

@@ -116,17 +116,17 @@ public class HelloKittyPanel extends JPanel
 		operatorButtons[3].setText("*");
 		operatorButtons[4].setText("=");
 	}
-	public void activateOperatorButtons()
-	{
-		for(int i = 1; i < 5; i++)
-		{
-			operatorButtons[i].setEnabled(true);
-		}
-	}
+	
+	
 	public void activateLikaMedButton()
 	{
 		operatorButtons[4].setEnabled(true);
 	}
+	public void deActivateLikaMedButton()
+	{
+		operatorButtons[4].setEnabled(false);
+	}
+	
 	public void activateDeleteButton()
 	{
 		operatorButtons[0].setEnabled(true);
@@ -135,9 +135,17 @@ public class HelloKittyPanel extends JPanel
 	{
 		operatorButtons[0].setEnabled(false);
 	}
+	
+	public void activateOperatorButtons()
+	{
+		for(int i = 1; i < 4; i++)
+		{
+			operatorButtons[i].setEnabled(true);
+		}
+	}
 	public void inActivateOperatorButtons()
 	{
-		for(int i = 1; i < 5; i++)
+		for(int i = 1; i < 4; i++)
 		{
 			operatorButtons[i].setEnabled(false);
 		}
