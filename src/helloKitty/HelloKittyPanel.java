@@ -110,7 +110,7 @@ public class HelloKittyPanel extends JPanel
 			operators.add(operatorButtons[i]);
 			operatorButtons[i].setEnabled(false);
 		}
-		operatorButtons[0].setText("<-");
+		operatorButtons[0].setText("\u2190");
 		operatorButtons[1].setText("+");
 		operatorButtons[2].setText("-");
 		operatorButtons[3].setText("*");

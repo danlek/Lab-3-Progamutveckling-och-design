@@ -14,7 +14,7 @@ public class HelloKittyListener implements java.awt.event.ActionListener
 	{
 		randomKnappTryck = (JButton) e.getSource();
 
-		if(randomKnappTryck.getText() == "<-")
+		if(randomKnappTryck.getText() == "\u2190")
 		{
 			HKL.backa();
 		}
